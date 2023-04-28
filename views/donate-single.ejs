@@ -9,10 +9,10 @@
       class="row no-gutters slider-text align-items-end justify-content-center"
     >
       <div class="col-md-9 ftco-animate pb-5 text-center">
-        <h1 class="mb-2 bread">E-Transaction</h1>
+        <h1 class="mb-2 bread"><%= HeadingOne %></h1>
         <p class="breadcrumbs">
           <span class="mr-2"
-            >Scroll down to begin</span>
+            > <%= subHeading %> </span>
         </p>
       </div>
     </div>
@@ -29,12 +29,9 @@
         </ul>
       </div>
       <div class="col-md-9">
-        <h3 class="mb-4">Donate</h3>
+        <h3 class="mb-4"><%= HeadingTwo %></h3>
         <p>
-          Even the all-powerful Pointing has no control about the blind texts it
-          is an almost unorthographic life One day however a small line of blind
-          text by the name of Lorem Ipsum decided to leave for the far World of
-          Grammar.
+          <%= message %>
         </p>
         <div class="col-lg-12 ftco-animate">
           <div class="ftco-animate">
@@ -51,6 +48,7 @@
                     type="text"
                     class="form-control"
                     placeholder="Your Name"
+                    required
                   />
                 </div>
                 <div class="form-group">
@@ -60,6 +58,7 @@
                     type="text"
                     class="form-control"
                     placeholder="Your Email"
+                    required
                   />
                 </div>
                 <div class="form-group">
@@ -69,6 +68,7 @@
                     type="number"
                     class="form-control"
                     placeholder="₦ Amount"
+                    required
                   />
                 </div>
                 <div class="form-group">
@@ -76,6 +76,7 @@
                     name="category"
                     id="category"
                     class="form-control"
+                    required
                   >
                     <option value="volvo">Category</option>
                     <option value="volvo">Church building</option>
@@ -95,45 +96,10 @@
           </div>
         </div>
         <hr />
-        <h3 class="mb-4 mt-5">God bless you richly</h3>
+        <h3 class="mb-4 mt-5"> </h3>
         <p>
-          Even the all-powerful Pointing has no control about the blind texts it
-          is an almost unorthographic life One day however a small line of blind
-          text by the name of Lorem Ipsum decided to leave for the far World of
-          Grammar.
+         <%= footer %>
         </p>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="ftco-section ftco-section-parallax bg-secondary ftco-no-pb">
-  <div class="parallax-img d-flex align-items-center">
-    <div class="container">
-      <div class="row d-flex justify-content-center">
-        <div
-          class="col-md-7 text-center heading-section heading-section-white heading-section-no-line ftco-animate"
-        >
-          <h2>Newsletter</h2>
-          <p>
-            Far far away, behind the word mountains, far from the countries
-            Vokalia and Consonantia, there live the blind texts. Separated they
-            live in
-          </p>
-          <div class="row d-flex justify-content-center mt-4 mb-4">
-            <div class="col-md-8">
-              <form action="#" class="subscribe-form">
-                <div class="form-group d-flex">
-                  <input
-                    type="text"
-                    class="form-control"
-                    placeholder="Enter email address"
-                  />
-                  <input type="submit" value="Subscribe" class="submit px-3" />
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
   </div>

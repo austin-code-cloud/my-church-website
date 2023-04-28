@@ -99,7 +99,10 @@ p {
   margin-top: 0;
   margin-bottom: 1rem;
 }
-
+.p-about {
+  text-align: justify;
+  text-justify: inter-word;
+}
 address {
   margin-bottom: 1rem;
   font-style: normal;
@@ -1071,7 +1074,6 @@ fieldset:disabled a.btn {
   font-size: 1.25rem;
   line-height: inherit;
   white-space: nowrap;
-  
 }
 
 .navbar-brand img {
@@ -2104,14 +2106,12 @@ h5,
   background: rgba(255, 255, 255, 0.1);
   border-radius: 5px;
   position: relative;
-
 }
 .ftco-navbar-light .ftco-social .donate {
   display: inline-block;
   margin: 0;
   padding: 0;
   background: none;
-
 }
 @media (max-width: 767.98px) {
   .ftco-navbar-light .ftco-social {
