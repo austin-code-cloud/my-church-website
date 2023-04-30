@@ -11,7 +11,16 @@ const donorReceipt = (req, res) => {
       });
 
       res.on("end", () => {
-        console.log(JSON.parse(data));
+        const paystackData = JSON.parse(data);
+
+        if (paystackData.status == true) {
+          res.json({
+            "status": "Donation Received",
+            "message": "Thank you for giving. God bless you."
+          })
+          console.log("Payment initialised? Status: " + paystackData.status);
+        }
+        console.log(paystackData);
       });
     })
     .on("error", (error) => {

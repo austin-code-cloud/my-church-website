@@ -47,9 +47,13 @@ const payment = (req, res) => {
             subHeading: "Scroll down for more information",
             HeadingTwo: "Error",
             message:
-              "The E-transaction process was terminated beacause of an " +
-               paystackData.message +
+              paystackData.message +
+              ". The transaction failed because the amount inputed can't be processed. " +
               " Please fill the form properly and press the donate button again",
+            footer:
+              " Thank you for considering a donation to our church." +
+              " We are grateful for your support and partnership as we seek to make a difference in the world together." +
+              " May God bless you abundantly for your generosity.",
           });
           console.log(
             "Payment initialised? Status: " +

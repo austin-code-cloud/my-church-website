@@ -5,7 +5,7 @@ const donorReceipt = require ('../controllers/donorReceipt')
 
 // GET request
 router.get("/", paymentForm);
-router.get("/paystack/callback", donorReceipt);
+router.get("/callback", donorReceipt);
 
 // POST request
 router.post("/paystack", payment);
